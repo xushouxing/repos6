@@ -22,9 +22,4 @@ public class BookController {
         System.out.println("更新了"+id+"图书");
         return "success";
     }
-    @RequestMapping(value = "book/{bid}",method = RequestMethod.DELETE)
-    public String delBook(@PathVariable("bid") Integer id){
-        System.out.println("删除了"+id+"图书");
-        return "success";
-    }
 }
